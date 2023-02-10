@@ -8,7 +8,6 @@ import HomeScreen from './screens/HomeScreen';
 import Registro from './screens/Registro'
 import estiloAuthentication from './estiloAuthentication';
 
-
 const Stack = createStackNavigator();
 
 export default function App() {

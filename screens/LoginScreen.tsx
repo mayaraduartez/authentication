@@ -5,8 +5,8 @@ import { auth } from '../firebase'
 import estiloAuthentication from '../estiloAuthentication'
 
 const LoginScreen = () => {
-  const [email, setEmail] = useState('diegonf25@gmail.com')
-  const [password, setPassword] = useState('123456')
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
 
   const navigation = useNavigation()
 

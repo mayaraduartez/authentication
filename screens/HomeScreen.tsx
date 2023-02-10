@@ -4,6 +4,7 @@ import { useNavigation } from "@react-navigation/core";
 import React from "react";
 import Profile from "./Profile";
 import ListarUsuarios from "./ListarUsuarios";
+import ManterCachorro from "./ManterCachorro";
 
 const Drawer = createDrawerNavigator();
 
@@ -15,6 +16,10 @@ function ListarUsuariosScreen({ navigation }) {
   return <ListarUsuarios></ListarUsuarios>;
 }
 
+function ManterCachorroScreen({navigation}){
+  return <ManterCachorro></ManterCachorro>;
+}
+
 const HomeScreen = () => {
   const navigation = useNavigation();
 
@@ -22,6 +27,7 @@ const HomeScreen = () => {
     <Drawer.Navigator>
       <Drawer.Screen name="Profile" component={ProfileScreen} />
       <Drawer.Screen name="ListarUsuarios" component={ListarUsuariosScreen} />
+      <Drawer.Screen name="Manter Dog" component={ManterCachorroScreen} />
     </Drawer.Navigator>
   );
 };

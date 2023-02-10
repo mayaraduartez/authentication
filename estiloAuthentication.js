@@ -26,6 +26,7 @@ export default StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     marginTop: 40,
+    
   },
   button: {
     backgroundColor: "#0782F9",
